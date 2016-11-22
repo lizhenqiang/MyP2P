@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#ff0000</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabMaxWidth">372dp</item>
+<item name="tabMinWidth">172dp</item>
+<item name="tabSelectedTextColor">@android:color/holo_red_light</item>
+<item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+    </style>
+
+<style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+<item name="android:textColor">@android:color/holo_blue_dark</item>
+<item name="android:textSize">55sp</item>
+<item name="textAllCaps">false</item>
+
+</style>
+
+
+
+
+    <!--自定义viewpagerIndicator样式-->
+<style name="StyledIndicators" parent="Theme.AppCompat.Light.NoActionBar">
+<item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+<item name="android:windowNoTitle">true</item>
+
+
+</style>
+
+
+<style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+<item name="android:background">@drawable/tab_indicator</item>
+<item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+<item name="android:textSize">14sp</item>
+<item name="android:dividerPadding">8dp</item>
+<item name="android:showDividers">middle</item>
+<item name="android:paddingLeft">10dp</item>
+<item name="android:paddingRight">10dp</item>
+<item name="android:fadingEdge">horizontal</item>
+<item name="android:fadingEdgeLength">8dp</item>
+</style>
+
+<style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+<item name="android:typeface">monospace</item>
+<item name="android:textColor">@drawable/selector_tabtext</item>
+</style>
+
+
+
+
+    <!-- MeFragment中最下面的4个选项的通用的设置 -->
+    <style name="LoginStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableRight">@drawable/right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/product_detail_common</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    </resources>
